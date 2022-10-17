@@ -1,10 +1,10 @@
 import React from "react";
 
-const Logo = (props) => {
+const Logo=({ appName, handleClick })=> {
   return (
     <header>
-      <h1>{props.appName}</h1>
-    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png" alt="" />
+      <h1>{appName}</h1>
+    <img onClick={handleClick} src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png" alt="" />
     </header>
   );
 };
